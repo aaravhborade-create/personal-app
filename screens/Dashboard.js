@@ -11,8 +11,6 @@ import Feather from '@expo/vector-icons/Feather';
 import { useFonts } from 'expo-font';
 
 export default function Recipes({ navigation }) {
-  const [showSearch, setShowSearch] = useState(false);
-  
   let [fontsLoaded] = useFonts({
    Heathergreen: require('../Heathergreen.otf'),  
 });
@@ -48,19 +46,19 @@ export default function Recipes({ navigation }) {
 
         <TouchableOpacity 
         style={styles.button4}
-        onPress = {() => navigation.navigate('GroceryList')}>>
+        onPress = {() => navigation.navigate('GroceryList')}>
           <Text style={styles.buttonText}>Grocery List</Text>
         </TouchableOpacity>
 
         <TouchableOpacity 
         style={styles.button5}
-        onPress = {() => navigation.navigate('Profile')}>>
+        onPress = {() => navigation.navigate('Profile')}>
           <Text style={styles.buttonText}>Profile</Text>
         </TouchableOpacity>
 
         <TouchableOpacity 
         style={styles.button5}
-        onPress = {() => navigation.navigate('SignInScreen')}>>
+        onPress = {() => navigation.navigate('SignInScreen')}>
           <Text style={styles.buttonText}>Logout</Text>
         </TouchableOpacity>  
         </View>  
